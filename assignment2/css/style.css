@@ -1,0 +1,842 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+header {
+    position: fixed;
+    background-color: black;
+}
+
+.logo {
+    width: 10%;
+}
+
+.currentpage {
+    box-shadow: inset 0 0 0 0 gold;
+    padding: 1vw;
+    margin: 1vw;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.currentpage:hover {
+    color: black;
+    box-shadow: inset 200px 0 0 0 goldenrod;;
+}
+
+.currentpage {
+    color: gold;    
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.menu {
+    display: inline-block;
+    padding-top: 1vw;
+}
+
+.menu li {
+    float: right;
+}
+  
+.menulink {
+    box-shadow: inset 0 0 0 0 gold;
+    padding: 1vw;
+    margin: 1vw;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.menulink:hover {
+    color: black;
+    box-shadow: inset 200px 0 0 0 goldenrod;;
+}
+  
+.menulink {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+
+
+
+
+.OurStory {
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;   
+    color: gold;
+    font-size: 1.5vw;
+    text-align: center;
+    padding-top: 30vw;
+    box-shadow: inset 0 0 40px 40px black;
+    margin-left: 15vw;
+    margin-right: 10vw;
+    width: 70vw;
+    height: 20vw;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../images/anhnen2.jpg)
+}
+
+.history {
+    padding-top: 8vw;
+}
+
+.history h1 {
+    font-size: 3vw;
+    color: gold;
+}
+
+.history {
+    color: white;
+    text-align: center ;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+div p {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.product {
+    text-align: center;
+    color: gold;
+    padding-top:12vw;
+}
+
+.product h1 {
+    font-size: 3vw;
+}
+
+.anhkem {
+    --s: 1vw;  /* size of the frame */
+    --b: 0.2vw;   /* border thickness */
+    --w: 17vw; /* width of the image */
+    --c: gold;
+    width: 20%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    padding: calc(2*var(--s));
+    --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+    background:
+    linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+    linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+    outline: calc(var(--w)/2) solid #0009;
+    outline-offset: calc(var(--w)/-2 - 2*var(--s));
+    transition: .4s;
+    cursor: pointer;
+    margin: 2vw;
+}
+
+.anhkem:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: calc(var(--s)/-2);
+    --_i: calc(100% - 2*var(--s));
+}
+ 
+.location {
+    text-align: center;
+    color: gold;
+}
+
+.location h1 {
+    font-size: 3vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.anhstore {
+    --s: 1vw;  /* size of the frame */
+    --b: 0.2vw;   /* border thickness */
+    --w: 17vw; /* width of the image */
+    --c: gold;
+    width: 20%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    padding: calc(2*var(--s));
+    --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+    background:
+    linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+    linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+    outline: calc(var(--w)/2) solid #0009;
+    outline-offset: calc(var(--w)/-2 - 2*var(--s));
+    transition: .4s;
+    cursor: pointer;
+    margin: 2vw;
+}
+
+.anhstore:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: calc(var(--s)/-2);
+    --_i: calc(100% - 2*var(--s));
+}
+
+footer {
+    box-shadow: inset 0px 0px 10px 10px black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+    text-align: center;
+    padding: 1vw;
+    color: white;
+    width: 100%;
+    background-image: url(../images/anhnencauvong.jpg)
+}
+
+.StoresLocation {
+    padding-bottom: 1vw;
+}
+
+.StoresLocation p {
+    display: inline-block;
+    font-size: 1vw;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#location1 {
+    padding-left: 17vw;
+
+}
+
+#location2 {
+    padding-left: 17.5vw;
+
+}
+
+#location3 {
+    padding-left: 17vw;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    margin-right: 10vw;
+    margin-left: 8vw;
+}
+
+.footer-section a {
+   color: white;
+   text-decoration: none;
+}
+
+.footer-section h3 {
+    color: gold;
+}
+
+footer img {
+    margin: 2vw;
+    width: 20%;
+}
+
+footer p {
+    font-size: 1.2vw;
+    color: black;
+}
+
+.footer-section a:hover {
+    color: black;
+    transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+.fbandig {
+    padding-top: 3vw;
+}
+
+.fbandig a {
+    color: white;
+    text-decoration: none;
+    font-size: 3vw;
+}
+
+.fbandig a:hover {
+    color: black;
+    transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+#facebook {
+    padding-right: 1vw;
+}
+
+#instagram {
+    padding-right: 2vw;
+}
+
+.footerbottom {
+    color: gold;
+}
+
+/*register*/
+
+.wrapper {
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 10vw;   
+    background-image: url(../images/christmas-lights.jpg)
+
+}
+
+.inner {
+    box-shadow: inset 0px 0px 5px 5px gold;
+    border-radius: 1vw;
+    padding: 2vw;
+    background: #fff;
+    margin: auto;
+    display: flex;
+}
+
+.inner .image-holder {
+    width: 50%;
+}
+
+.inner form {
+    width: 100%;
+    padding-top: 3vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+
+.form-control {
+    border: 1px solid #333;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    display: block;
+    width: 100%;
+    height: 2vw;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+#genderSelect {
+    color: black;
+}
+
+.notify {
+    color: black;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, font-size 0.3s ease;
+}
+
+.registerbutton {
+    border: none;
+    width: 8vw;
+    height: 3vw;
+    margin: auto;
+    margin-top: 2vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 0.8vw;
+    background-color: black;    
+    color: white;
+    border-radius: 0.5vw;
+    box-shadow: inset 0 0 0 0 gold;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.registerbutton:hover {
+    box-shadow: inset 200px 0 0 0 goldenrod;
+}
+
+input:focus {
+    outline: none;
+}
+
+.form-wrapper input[type="text"],
+.form-wrapper input[type="email"],
+.form-wrapper input[type="password"],
+.form-wrapper select {
+    
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, font-size 0.3s ease; 
+}
+
+.form-wrapper input[type="text"]:focus,
+.form-wrapper input[type="email"]:focus,
+.form-wrapper input[type="password"]:focus,
+.form-wrapper select:focus {
+    font-size: 0.6vw; 
+}
+
+.notify:hover {
+    color: gray;
+    font-size: 0.8vw;
+}
+
+/*register*/
+
+/*order*/
+
+.productorder {
+    padding-top: 2vw;
+    text-align: center;
+    color: gold;
+}
+
+.OrderHere {
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;   
+    color: gold;
+    font-size: 1.5vw;
+    text-align: center;
+    padding-top: 30vw;
+    box-shadow: inset 0px 0px 40px 40px black;
+    margin-left: 15vw;
+    margin-right: 10vw;
+    width: 70vw;
+    height: 20vw;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../images/anhnen2.jpg)
+}
+
+.anhkemorder {
+    --s: 1vw;  /* size of the frame */
+    --b: 0.2vw;   /* border thickness */
+    --w: 17vw; /* width of the image */
+    --c: gold;
+    width: 20%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    padding: calc(2*var(--s));
+    --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+    background:
+    linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+    linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+    outline: calc(var(--w)/2) solid #0009;
+    outline-offset: calc(var(--w)/-2 - 2*var(--s));
+    transition: .4s;
+    cursor: pointer;
+    margin: 2vw;
+}
+
+.anhkemorder:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: calc(var(--s)/-2);
+    --_i: calc(100% - 2*var(--s));
+}
+
+.Products h1 {
+    font-size: 3vw;
+    color: gold;
+}
+
+main {
+    background-color: white;
+}
+
+.Products {
+    padding-top: 8vw;
+    text-align: center ;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.Products p {
+    padding-top: 1vw;
+}
+
+.productorder {
+    padding-top: 0.1vw;
+}
+
+#orderformDiv {
+    display: none;
+    position: fixed;
+    padding-left: 10vw;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    z-index: 999; /* ensure it appears above other elements */
+}
+
+#chkdelivery { 
+    display: none;
+}
+
+.checkboxdevandpay {
+    display: inline-block;
+}
+
+#threecardsid {
+    display: none;
+}
+
+#chkpayonl {
+    display: none;
+}
+
+.checkboxdevandpay input[type='checkbox'] {
+    width:1.5vw;
+    height:1vw;
+}
+        
+.form-wrapper input[type="text"],
+.form-wrapper input[type="email"],
+.form-wrapper input[type="password"],
+.form-wrapper select {
+    
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, font-size 0.3s ease; 
+}
+
+.form-wrapper input[type="text"]:focus,
+.form-wrapper input[type="email"]:focus,
+.form-wrapper input[type="password"]:focus,
+.form-wrapper select:focus {
+    font-size: 0.6vw; 
+}
+
+.sameasdev {
+    padding-left: 11.8vw;
+}
+
+.container{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+    width: 100%;
+    padding-top: 8vw;
+}
+
+
+.d-flex {
+    display: flex;
+    flex-direction: row;
+    background: #f6f6f6;
+    border-radius: 0 0 5px 5px;
+    padding: 2vw ; 
+    background-image: url(../images/anhnencauvong.jpg)
+}
+
+.orderformmm h3 { 
+    display: block;
+    color: yellow;
+    padding: 1vw;
+}
+
+.orderformmm {
+    flex: 4;
+}
+
+.Yorder {
+    flex: 2;
+}
+
+.selectimg {
+    text-align: center;
+}
+
+
+.selectimg img {
+    width: 40%;
+}
+
+.Yorder h2 {
+    text-align: center;
+}
+
+.required{
+    color: red;
+}
+
+.container label{
+    color: white;
+    display: block;
+    margin: 1vw;
+}
+
+.container label>span {
+    float: left;
+    width: 25%;
+    padding-right: 0.5vw;
+}
+
+.container input[type="text"], .container input[type="tel"], .container input[type="email"], select {
+    width: 70%;
+    height: 1.5vw;
+    padding: 0.4vw 0.4vw;
+    margin-bottom: 1vw;
+    border: 1px solid #dadada;
+    color: #888;
+}
+
+select {
+    width: 72%;
+    height: 2vw;
+}
+
+.Yorder {
+    height: 30vw;
+    padding: 2vw;
+    border: 1px solid #dadada;
+}
+
+
+
+.Yorder h2 {
+    color: gold;
+}
+
+.checkboxdevandpay {
+    padding-left: 2vw;
+}
+
+.threecards label {
+    display: inline-block;
+    padding-left: 2.2vw;
+}
+
+
+#chkpayonl {  
+    padding-top: 1vw;  
+    padding-left: 2.3vw;
+    width: 100%;
+}
+
+.orderBUTTON {
+    text-align: center;
+}
+
+.orderBUTTON h3 {
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    float: left;
+    padding-top: 0.2vw;
+    padding-left: 1vw;
+    border-radius: 1vw;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.orderBUTTON h3:hover {
+    color: gold;
+}
+
+.orderbutton {
+    width: 20%;
+    margin-top: 2vw;
+    padding: 1vw;
+    border: none;
+    border-radius: 1vw;
+    color: #fff;
+    background-color: black;
+    font-size: 0.8vw;
+    font-weight: bold;
+    box-shadow: inset 0 0 0 0 gold;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.orderbutton:hover {
+    box-shadow: inset 200px 0 0 0 goldenrod;
+}
+
+
+@supports(-webkit-appearance: none) or (-moz-appearance: none) {
+    input[type='checkbox'],
+    input[type='radio'] {
+      --active: #275EFE;
+      --active-inner: #fff;
+      --focus: 2px rgba(39, 94, 254, .3);
+      --border: #BBC1E1;
+      --border-hover: #275EFE;
+      --background: #fff;
+      --disabled: #F6F8FF;
+      --disabled-inner: #E1E6F9;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      height: 21px;
+      outline: none;
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      margin: 0;
+      cursor: pointer;
+      border: 1px solid var(--bc, var(--border));
+      background: var(--b, var(--background));
+      &:after {
+        content: '';
+        display: block;
+        left: 0;
+        top: 0;
+        position: absolute;
+        transition: transform var(--d-t, .3s) var(--d-t-e, ease), opacity var(--d-o, .2s);
+      }
+      &:checked {
+        --b: var(--active);
+        --bc: var(--active);
+        --d-o: .3s;
+        --d-t: .6s;
+        --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+      }
+      &:disabled {
+        --b: var(--disabled);
+        cursor: not-allowed;
+        opacity: .9;
+        &:checked {
+          --b: var(--disabled-inner);
+          --bc: var(--border);
+        }
+        & + label {
+          cursor: not-allowed;
+        }
+      }
+      &:hover {
+        &:not(:checked) {
+          &:not(:disabled) {
+            --bc: var(--border-hover);
+          }
+        }
+      }
+      &:focus {
+        box-shadow: 0 0 0 var(--focus);
+      }
+      &:not(.switch) {
+        width: 21px;
+        &:after {
+          opacity: var(--o, 0);
+        }
+        &:checked {
+          --o: 1;
+        }
+      }
+      & + label {
+        font-size: 14px;
+        line-height: 21px;
+        display: inline-block;
+        vertical-align: top;
+        cursor: pointer;
+        margin-left: 4px;
+      }
+    }
+    input[type='checkbox'] {
+      &:not(.switch) {
+        border-radius: 7px;
+        &:after {
+          width: 5px;
+          height: 9px;
+          border: 2px solid var(--active-inner);
+          border-top: 0;
+          border-left: 0;
+          left: 7px;
+          top: 4px;
+          transform: rotate(var(--r, 20deg));
+        }
+        &:checked {
+          --r: 43deg;
+        }
+      }
+      &.switch {
+        width: 38px;
+        border-radius: 11px;
+        &:after {
+          left: 2px;
+          top: 2px;
+          border-radius: 50%;
+          width: 15px;
+          height: 15px;
+          background: var(--ab, var(--border));
+          transform: translateX(var(--x, 0));
+        }
+        &:checked {
+          --ab: var(--active-inner);
+          --x: 17px;
+        }
+        &:disabled {
+          &:not(:checked) {
+            &:after {
+              opacity: .6;
+            }
+          }
+        }
+      }
+    }
+    input[type='radio'] {
+      border-radius: 50%;
+      &:after {
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        background: var(--active-inner);
+        opacity: 0;
+        transform: scale(var(--s, .7));
+      }
+      &:checked {
+        --s: .5;
+      }
+    }
+  }
+    
+/*order*/
+
+/*feature*/
+
+.Features {
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;   
+    color: gold;
+    font-size: 1.5vw;
+    text-align: center;
+    padding-top: 30vw;
+    box-shadow: inset 0px 0px 40px 40px black;
+    margin-left: 15vw;
+    margin-right: 10vw;
+    width: 70vw;
+    height: 20vw;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../images/anhnen2.jpg)
+}
+
+.somefeatures {
+    font-size: 1.2vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.bodyfeature p {
+    text-align: center;
+    color: white;
+}
+
+.clicktosee {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.clicktosee:hover {
+    color: gold;
+    transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+.footerfeaturepage {
+    box-shadow: inset 0 0 10 10 black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+    text-align: center;
+    padding: 1vw;
+    color: white;
+    width: 100%;
+    background-image: url(../images/anhnencauvong.jpg)
+}
+
+/*feature*/
+
+

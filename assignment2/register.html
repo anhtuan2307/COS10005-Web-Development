@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Life-Register</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <ul class="menu">
+            <a class="logo" href="index.html"><img class="logo" src="images/sweet-life-high-resolution-logo-transparent (1).png" alt="companylogo"></a>
+            <li><a class="menulink" href="features.html">Features</a></li>
+            <li><a class="menulink" href="order.html">Order Here</a></li>
+            <li><a class="currentpage" href="register.html">Register Here</a></li>
+            <li><a class="menulink" href="order.html">Products</a></li>
+
+            <li><a class="menulink" href="index.html">Home</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="wrapper">
+    <div class="inner">
+    
+        <form name="registerform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" onsubmit="return validateForm()">
+
+            
+
+            <div class="form-wrapper">
+
+                <label for="firstname"><i class="fa">&#xf2bc;</i>
+                <input id="firstname" name="First_Name" type="text" placeholder="First Name" class="form-control">
+                </label>
+                
+                <label for="lastname"><i class="fa">&#xf2bc;</i>
+                <input id="lastname" name="Last_Name"  type="text" placeholder="Last Name" class="form-control">
+                </label>
+            
+            </div>
+
+            <div class="form-wrapper">
+
+                <label for="username"><i class="fa">&#xf2bb;</i>
+                <input id="username" name="Username" type="text" placeholder="Username" class="form-control">
+                </label>
+            
+            </div>
+            
+            <div class="form-wrapper">
+
+                <label for="password"><i class="fa">&#xf069;</i>
+                <input id="password" name="Password" type="password" placeholder="Password" class="form-control">
+                </label>
+
+            </div>
+
+            <div class="form-wrapper">
+                <select name="Gender" id="genderSelect" class="form-control">
+                    <option value disabled selected>Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                
+            </div>
+
+            <div class="form-wrapper">
+
+                <label for="email"><i class="fa">&#xf0e0;</i>
+                <input id="email" name="Email" type="email" placeholder="Email Address" class="form-control">
+                </label>
+
+            </div>
+
+            <div class="form-wrapper">
+                <p class="notify"><i class="fa">&#xf0a2;</i> Get News Through Your Mail</p>
+                
+                <input type="radio" name="notified" id="Yess" value="Yes">
+                <label for="Yess">Yes</label>
+
+                <br>
+
+                <input type="radio" name="notified" id="Noo" value="No">
+                <label for="Noo">No</label>
+
+            </div>
+
+            <div class="form-wrapper">
+            <p class="notify"><i class="fa">&#xf0a2;</i> What You Want To Hear From Us</p>
+            <input type="checkbox" id="newflavour" name="news[]" value="newflavour">
+            <label for="newflavour">New Flavour</label><br>
+            <input type="checkbox" id="events" name="news[]" value="envents">
+            <label for="events">Events</label><br>
+            <input type="checkbox" id="discount" name="news[]" value="discount">
+            <label for="discount">Discount</label><br><br>
+            
+            </div>
+
+            <button class="registerbutton">
+                Register
+            </button>
+
+        </form>
+        
+    </div>
+    
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sweet Life-Order</title>
+      <link rel="icon" type="image/x-icon" href="images/logo.png">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="js/script.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <header>
+         <nav>
+            <ul class="menu">
+               <a class="logo" href="index.html"><img class="logo" src="images/sweet-life-high-resolution-logo-transparent (1).png" alt="companylogo"></a>
+               <li><a class="menulink" href="features.html">Features</a></li>
+               <li><a class="currentpage" href="#orderpage">Order Here</a></li>
+               <li><a class="menulink" href="register.html">Register Here</a></li>
+               <li><a class="menulink" href="#productmenu">Products</a></li>
+               <li><a class="menulink" href="index.html">Home</a></li>
+            </ul>
+         </nav>
+      </header>
+      <div class="OrderHere" id="orderpage">
+         <section class="Products">
+            <h1>
+               Products
+            </h1>
+            <p><i class="fa">&#xf217;</i> Click On Your Flavourite Product To Order <i class="fa">&#xf217;</i></p>
+         </section>
+      </div>
+      <section class="productorder" id="productmenu">
+         <img class="anhkemorder" src="images/cafegrande.png" alt="anhkemcafegrande" onclick="showDiv(); showOrderForm(this);">
+         <img class="anhkemorder" src="images/cookieandcream.png" alt="anhkemcookieandcream" onclick="showDiv(); showOrderForm(this);">
+         <img class="anhkemorder" src="images/goldenblonde.png" alt="anhkemgoldenblonde" onclick="showDiv(); showOrderForm(this);">
+         <img class="anhkemorder" src="images/rockyroad.png" alt="anhkemrockyroad" onclick="showDiv(); showOrderForm(this);">
+         <img class="anhkemorder" src="images/salted-caramel-package.png" alt="anhkemsaltedcaramel" onclick="showDiv(); showOrderForm(this);">
+         <img class="anhkemorder" src="images/saltedpretzel.png" alt="anhkemsaltedpretzel" onclick="showDiv(); showOrderForm(this);">
+         <img class="anhkemorder" src="images/triplechoccookie.png" alt="anhkemtriplechoccookie" onclick="showDiv(); showOrderForm(this);">
+         <img class="anhkemorder" src="images/vanilla.png" alt="anhkemvanilla" onclick="showDiv(); showOrderForm(this);">
+         <img class="anhkemorder" src="images/vnlcrmbrownie.png" alt="anhkemvnlcrmbrownie" onclick="showDiv(); showOrderForm(this);">
+      </section>
+      <div id="orderformDiv" class="container">
+         <div class="d-flex">
+            <div class="orderformmm">
+               <form name="nameoforderform" id="theorderform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" onsubmit="return  validateOrderForm(event)">
+                  <div class="form-wrapper">
+
+                     <label for="Full Name">
+                     <span>Full Name <span class="required">*</span></span>
+                     <input id="Full Name" type="text" name="Full_Name" placeholder="Enter Your Name...">
+                     </label>
+
+                     <div id="chkdelivery">
+                        <label for="DeliveryAddress">
+                        <span>Address <span class="required">*</span></span>
+                        <input id="DeliveryAddress" type="text" name="Delivery_Address" placeholder="Devlivery Address...">
+                        </label>
+                     </div>
+
+                     <label for="billingAddressInput">
+                     <span>Billing Address <span class="required">*</span></span>
+                     <input id="billingAddressInput" type="text" name="Billing_Address" placeholder="Billing Address..." >
+                     </label>
+
+                     <div class="sameasdev">
+                        <label  for="sameAsDelivery">
+                        <input  type="checkbox" id="sameAsDelivery"  onclick="copyAddress()" />
+                        Same as delivery
+                        </label>
+                     </div>
+
+                     <label for="Postcodee">
+                     <span>Postcode <span class="required">*</span></span>
+                     <input type="text" id="Postcodee" name="Postcode" placeholder="Enter Your Postcode..."> 
+                     </label>
+
+                     <label for="Phonee">
+                     <span>Phone <span class="required">*</span></span>
+                     <input id="Phonee" type="text" name="Phone" placeholder="Enter Your Phone Number..."> 
+                     </label>
+
+                     <label for="emaill">
+                     <span>Email Address <span class="required">*</span></span>
+                     <input id="emaill" type="email" name="Mail" placeholder="Enter Your Email Address..."> 
+                     </label>
+
+                  </div>
+                  <div class="orderBUTTON">
+                     <h3 onclick="goBack()"><i class="fa">&#xf100;</i> Back</h3>
+                     <button class="orderbutton" type="submit">Place Order</button>
+                  </div>
+            </div>
+            <div class="Yorder">
+            <h2>100<i class="fa">&#xf155;</i> Per 4 Scoops </h2>
+            <div class="selectimg" id="selectedFlavour">
+              
+            </div>
+            <h2><i class="fa">&#xf283;</i> Payment Information</h2>
+            <div id="PayOnDevChkbox" class="checkboxdevandpay">
+            <label  for="chkYes">
+            <input  type="checkbox" id="chkYes"  onclick="ShowHideDivdev()" />
+            Pay On Pick Up <i  class="fa"> &#xf0d6;</i>
+            </label>
+            </div>  
+            <div id="PayOnlChkbox" class="checkboxdevandpay">
+            <label  for="chkpayonlYes">
+            <input type="checkbox" id="chkpayonlYes"  onclick="ShowHideDivpay()" />
+            Pay Online <i class="fa"> &#xf283;</i>
+            </label>
+            </div>  
+            <div id="threecardsid" class="threecards">
+            <label>
+            <input name="TypeOfCard" type="radio" value="Visa"> <i class="fa">&#xf1f0;</i>
+            </label>
+            <label>
+            <input name="TypeOfCard" type="radio" value="MasterCard"> <i class="fa">&#xf1f1;</i>
+            </label>
+            <label>
+            <input name="TypeOfCard" type="radio" value="American Express"> <i class="fa">&#xf1f3;</i>
+            </label>
+            </div>
+            <div class="form-wrapper" id="chkpayonl">
+              <label for="PayOnl"><i class="fa"> &#xf283;</i>
+              <input name="CardInfo" placeholder="Enter Your Card Number..." type="text" id="PayOnl" />
+              </label>
+          </div>
+            </div>
+            </form>
+         </div>
+      </div>
+      <footer>
+         <a href="index.html">
+         <img src="images/sweet-life-high-resolution-logo-transparent (1).png" alt="anhlogo">
+         </a>
+         <div class="footer-content">
+            <div class="footer-section">
+               <h3>ICE CREAM <i class="fa">&#xf217;</i>
+               </h3>
+               <a href="order.html">
+                  <h5>Order Here</h5>
+               </a>
+            </div>
+            <div class="footer-section">
+               <h3>CONTACT <i class="fa">&#xf0e0;</i></h3>
+               <a href="mailto:doanphuonganhtuan@gmail.com">
+                  <h5>Contact Us</h5>
+               </a>
+            </div>
+            <div class="footer-section">
+               <h3>SUBCRIBE <i class="fa">&#xf2c3;</i></h3>
+               <a href="register.html">
+                  <h5>Sign Up Here </h5>
+               </a>
+            </div>
+         </div>
+         <div class="fbandig">
+            <a href="https://www.facebook.com/profile.php?id=100054893440866">
+            <i id="facebook" class="fa">&#xf09a;</i>
+            </a>
+            <a href="https://www.instagram.com/anhh.tuan_/">
+            <i id="instagram" class="fa">&#xf16d;</i>
+            </a>
+         </div>
+         <p class="footerbottom">&copy; 2023 Sweet Life. All rights reserved.</p>
+      </footer>
+   </body>
+</html>
